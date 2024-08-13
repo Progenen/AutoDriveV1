@@ -58,9 +58,17 @@ $color1: #ff0000;
 
 
 // Fonts
-// @include font-face('Example', '../fonts/Example/Example-Bold', 700, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Bold', 700, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Medium', 500, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-SemiBold', 600, normal, ttf);
+@include font-face('Montserrat', '../fonts/Montserrat/Montserrat-Regular', 400, normal, ttf);
+
+@include font-face('Mulish', '../fonts/Mulish/Mulish-Regular', 400, normal, ttf);
+@include font-face('Mulish', '../fonts/Mulish/Mulish-Bold', 700, normal, ttf);
+
 
 // Vars
+$colorRed: #FF2919;
 
 // Путь к спрайту для конкатенации
 $sprite: "../svg/dest/stack/sprite.svg#";

@@ -5,12 +5,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zlatmax | Development Version</title>
+    <title>AutoDriveV1 | Development Version</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
+
 </head>
 
 <body>
     <div class="wrapper">
         <div class="content">
             <header class="header">
+                <div class="header__top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 header__col header__col--location">
+                                <div class="header__location header__info">
+                                    <svg>
+                                        <use xlink:href='svg/dest/stack/spriteMono.svg#location'></use>
+                                    </svg>
+                                    <address>
+                                        г. Москва, Варшавское шоссе 4
+                                    </address>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 header__col header__col--schedule">
+                                <div class="header__schedule header__info">
+                                    <svg>
+                                        <use xlink:href='svg/dest/stack/spriteMono.svg#watch'></use>
+                                    </svg>
+                                    с 9:00 до 21:00
+                                </div>
+                            </div>
+                            <div class="col-lg-4 header__col header__col--phone">
+                                <a href="tel:#" class="header__phone header__info">
+                                    <svg>
+                                        <use xlink:href='svg/dest/stack/spriteMono.svg#phone'></use>
+                                    </svg>
+                                    +7 999 999-99-99
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-3 header__col header__col--logo">
+                                <a href="#" class="header__logo">
+                                    <img src="images/logo.svg" alt="">
+                                </a>
+                            </div>
+                            <div class="col-lg-6 header__col header__col--menu">
+                                <nav class='header__menu'>
+                                    <ul class='header__menu-list'>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Каталог
+                                            </a>
+                                        </li>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Автокредит
+                                            </a>
+                                        </li>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Trade-In
+                                            </a>
+                                        </li>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Выкуп
+                                            </a>
+                                        </li>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Акции
+                                            </a>
+                                        </li>
+                                        <li class='header__menu-item'>
+                                            <a href='#' class='header__menu-link'>
+                                                Контакты
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="col-lg-3 header__col header__col--ui">
+                                <button class="header__call btn">
+                                    Заказать звонок
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </header>
