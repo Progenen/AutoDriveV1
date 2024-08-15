@@ -1,0 +1,31 @@
+.offer {
+    padding-top: 60px;
+    &__slider-item {
+    }
+
+    &__slider-item h2 {
+        font-size: 60px;
+        margin: 0 0 0 0;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    &__slider-item p {
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0;
+        line-height: normal;
+    }
+
+    &__slider-item-inner {
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+    }
+
+    &__filter {
+        max-width: 1210px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
