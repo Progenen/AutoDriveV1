@@ -1,6 +1,14 @@
 .offer {
     padding-top: 60px;
+    padding-bottom: 40px;
+    &__slider {
+    }
+
     &__slider-item {
+        border-radius: 20px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     &__slider-item h2 {
@@ -8,6 +16,12 @@
         margin: 0 0 0 0;
         font-weight: 600;
         line-height: normal;
+        word-break: keep-all;
+
+        span {
+            white-space: nowrap;
+            
+        }
     }
 
     &__slider-item p {
@@ -27,5 +41,122 @@
         max-width: 1210px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: -40px;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.choose {
+    background-color: #fff;
+    &__btn {
+    }
+
+    &__banners {
+        width: 100%;
+    }
+
+    &__banners-wrapper {
+    }
+
+    &__banners-item {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 248px;
+        height: 329px;
+        padding-top: 20px;
+        a, > img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        &:hover .choose__banners-item-img-hover{
+            opacity: 1;
+        }
+
+        a {
+            z-index: 20;
+        }
+    }
+    &__banners-item-img-hover {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: .2s;
+
+    }
+
+    &__brands {
+        margin-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .brand {
+            margin: 0;
+        }
+    }
+}
+
+.dominations {
+
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(fill, 1px);
+        column-gap: 20px;
+    }
+
+    &__grid-item {
+        opacity: .8;
+        background-color: #2C2C2E;
+        border-radius: 20px;
+        padding: 40px;
+        margin-top: 20px;
+        h3 {
+            font-size: 25px;
+            font-weight: 700;
+            line-height: 140%; /* 35px */
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            margin: 0;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 25.2px */
+        }
+
+        img {
+            margin-top: 40px;
+            width: 100%;
+            max-width: min-content;
+            display: block;
+        }
+        
+        &:first-child {
+            grid-row: span 763;
+            margin-top: 0;
+        }
+        &:nth-child(2) {
+            grid-row: span 369;
+            margin-top: 0;
+        }
+        &:nth-child(3) {
+            grid-row: span 312;
+            margin-top: 0;
+        }
+        &:nth-child(4) {
+            grid-row: span 430;
+        }
+        &:last-child {
+            grid-row: span 374;
+        }
     }
 }

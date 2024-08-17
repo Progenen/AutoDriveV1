@@ -45,7 +45,8 @@ footer {
 }
 
 .container {
-    max-width: 1344px;
+    --bs-gutter-x: 4.3rem;
+    max-width: 1390px;
 }
 
 .btn {
@@ -184,7 +185,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     row-gap: 30px;
-    column-gap: 20px;
     padding: 40px;
     border-radius: 20px;
     align-items: flex-end;
@@ -192,11 +192,15 @@ footer {
         letter-spacing: 0.24px;
     }
 
+    &__input-text {
+        margin-right: 10px;
+        width: 15.93%;
+    }
+
     &__input {
         display: flex;
         flex-direction: column;
         row-gap: 5px;
-        
         input, select {
             padding: 15px 13px;
             border-radius: 8px;
@@ -211,15 +215,29 @@ footer {
             }
         }
 
+        input {
+            width: 100%;
+        }
+
         select {
+            width: 100%;
             display: block;
-            width: 233px;
             cursor: pointer;
+        }
+    }
+
+    &__select {
+        margin-right: 20px;
+        width: 20.62%;
+
+        &--types {
+            display: none;
         }
     }
 
     &__select-input {
         position: relative;
+        width: 100%;
         &::after {
             position: absolute;
             content: "";
@@ -239,16 +257,21 @@ footer {
 
     &__btn {
         height: 52px;
+        max-width: 20.62%;
+        margin-left: 10px;
     }
 
     &__types {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         width: 100%;
     }
 
     &__types-item {
+        min-width: 120px;
         max-width: 130px;
+        width: 11.89%;
         text-align: center;
         position: relative;
         padding: 10px 0;
@@ -306,5 +329,67 @@ footer {
         svg {
             fill: #BDBDBD;
         }
+    }
+}
+
+section {
+    padding: 100px 0;
+}
+
+.main-title {
+    margin-bottom: 40px;
+    span {
+        font-size: 20px;
+        font-weight: 500;
+        color: $colorRed;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        color: #000;
+        margin: 10px 0 0 0;
+    }
+
+    &--alt h2{
+        color: #fff;
+    }
+}
+
+.brand {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #BFBFBF;
+    background-color: #fff;
+    border-radius: 8px; 
+    max-width: 203px;
+    width: 100%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    svg {
+        width: 28px;
+        height: 28px;
+        fill: #000;
+        margin-right: 10px;
+    }
+
+    span {
+        font-size: 10px;
+        font-weight: 500;
+        color: #2F5BCE;
+        margin-left: auto;
+    }
+
+    p {
+        margin: 0;
     }
 }

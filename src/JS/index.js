@@ -1,5 +1,5 @@
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, FreeMode } from "swiper/modules";
 import { EffectFade } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -18,15 +18,34 @@ document.addEventListener('DOMContentLoaded', function () {
         const slider = new Swiper('.slider', {
             modules: [Pagination, Navigation, EffectFade],
             effect: "fade",
-            navigation: {
-                nextEl: ".slider__arrow--next",
-                prevEl: ".slider__arrow--prev"
-            },
             pagination: {
                 el: ".slider__pagination",
                 type: "bullets"
+            },
+            breakpoints: {
+                
+                992: {
+                    navigation: {
+                        nextEl: ".slider__arrow--next",
+                        prevEl: ".slider__arrow--prev"
+                    },
+                }
             }
         })
+    }
+
+    if (document.querySelector(".choose__banners")) {
+        const chooseSlider = new Swiper(".choose__banners", {
+            modules: [FreeMode],
+            spaceBetween: 12,
+            slidesPerView: "auto",
+            freeMode: true,
+            breakpoints: {
+                576: {
+                    spaceBetween: 20
+                }
+            }
+        });
     }
 
     if (window.innerWidth <= 992) {

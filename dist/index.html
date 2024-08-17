@@ -112,11 +112,23 @@
 <main>
     <section class="offer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
+            <div class="row p-0">
+                <div class="col-lg-12 p-0">
                     <div class="offer__slider slider swiper">
                         <div class="offer__slider-wrapper slider__wrapper swiper-wrapper">
-                            <div class="offer__slider-item slider__item swiper-slide" style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
+                            <div class="offer__slider-item slider__item swiper-slide"
+                                style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
+                                <div class="offer__slider-item-inner">
+                                    <h2>
+                                        Новый Changan <span>Uni-K</span>
+                                    </h2>
+                                    <p>
+                                        уже в продаже
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="offer__slider-item slider__item swiper-slide"
+                                style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
                                 <div class="offer__slider-item-inner">
                                     <h2>
                                         Новый Changan Uni-K
@@ -126,7 +138,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="offer__slider-item slider__item swiper-slide" style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
+                            <div class="offer__slider-item slider__item swiper-slide"
+                                style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
                                 <div class="offer__slider-item-inner">
                                     <h2>
                                         Новый Changan Uni-K
@@ -136,17 +149,8 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="offer__slider-item slider__item swiper-slide" style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
-                                <div class="offer__slider-item-inner">
-                                    <h2>
-                                        Новый Changan Uni-K
-                                    </h2>
-                                    <p>
-                                        уже в продаже
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="offer__slider-item slider__item swiper-slide" style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
+                            <div class="offer__slider-item slider__item swiper-slide"
+                                style="background-image: url(images/content/offer-slider/offer-slider1.webp)">
                                 <div class="offer__slider-item-inner">
                                     <h2>
                                         Новый Changan Uni-K
@@ -203,14 +207,30 @@
                                     <option value="Mercedes">
                                         Mercedes
                                     </option>
-                                </select> 
+                                </select>
                             </div>
                         </div>
-                        <div class="filter__input">
+                        <div class="filter__input filter__select filter__select--types">
+                            <label for="selectMark">Кузов</label>
+                            <div class="filter__select-input">
+                                <select name="mark" id="selectMark">
+                                    <option value="other">
+                                        Любой
+                                    </option>
+                                    <option value="BMW">
+                                        Седан
+                                    </option>
+                                    <option value="Mercedes">
+                                        Лифтбэк
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="filter__input filter__input-text">
                             <label for="priceBefore">Цена от</label>
                             <input type="text" id="priceBefore">
                         </div>
-                        <div class="filter__input">
+                        <div class="filter__input filter__input-text">
                             <label for="priceAfter">Цена до</label>
                             <input type="text" id="priceAfter">
                         </div>
@@ -228,47 +248,259 @@
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType2">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType2'></use>
                                 </svg>
-                                <label for="carType2">Седан</label>
+                                <label for="carType2">Лифтбэк</label>
                             </div>
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType3">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType3'></use>
                                 </svg>
-                                <label for="carType3">Седан</label>
+                                <label for="carType3">Хетчбэк</label>
                             </div>
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType4">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType4'></use>
                                 </svg>
-                                <label for="carType4">Седан</label>
+                                <label for="carType4">Купе</label>
                             </div>
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType5">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType5'></use>
                                 </svg>
-                                <label for="carType5">Седан</label>
+                                <label for="carType5">Кабриолет</label>
                             </div>
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType6">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType6'></use>
                                 </svg>
-                                <label for="carType6">Седан</label>
+                                <label for="carType6">Внедорожник</label>
                             </div>
                             <div class="filter__types-item">
                                 <input type="checkbox" id="carType7">
                                 <svg>
-                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType1'></use>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType7'></use>
                                 </svg>
-                                <label for="carType7">Седан</label>
+                                <label for="carType7">Пикап</label>
+                            </div>
+                            <div class="filter__types-item">
+                                <input type="checkbox" id="carType8">
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/spriteMono.svg#carType8'></use>
+                                </svg>
+                                <label for="carType8">Минивэн</label>
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="choose">
+        <div class="container">
+            <div class="row align-items-center main-title">
+                <div class="col-lg-10 col-md-8">
+                    <span>Каталог</span>
+                    <h2>Выбери свою марку</h2>
+                </div>
+                <div class="col-lg-2 col-md-4 d-none d-md-block">
+                    <a href="#" class="choose__btn btn btn--white">
+                        Показать все
+                    </a>
+                </div>
+            </div>
+            <div class="row pe-0">
+                <div class="col-lg-12 pe-0">
+                    <div class="choose__banners swiper">
+                        <div class="choose__banners-wrapper swiper-wrapper">
+                            <div class="choose__banners-item swiper-slide">
+                                <a href="#"></a>
+                                <img src="images/content/choose-banners/choose-banners1.webp" alt="">
+                                <img class="choose__banners-item-img-hover"
+                                    src="images/content/choose-banners/choose-banners1-2.webp" alt="">
+                            </div>
+                            <div class="choose__banners-item swiper-slide">
+                                <a href="#"></a>
+                                <img src="images/content/choose-banners/choose-banners2.webp" alt="">
+                                <img class="choose__banners-item-img-hover"
+                                    src="images/content/choose-banners/choose-banners2-2.webp" alt="">
+                                <a href="#"></a>
+                            </div>
+                            <div class="choose__banners-item swiper-slide">
+                                <a href="#"></a>
+                                <img src="images/content/choose-banners/choose-banners3.webp" alt="">
+                                <img class="choose__banners-item-img-hover"
+                                    src="images/content/choose-banners/choose-banners3-2.webp" alt="">
+                            </div>
+                            <div class="choose__banners-item swiper-slide">
+                                <a href="#"></a>
+                                <img src="images/content/choose-banners/choose-banners4.webp" alt="">
+                                <img class="choose__banners-item-img--hover"
+                                    src="images/content/choose-banners/choose-banners4-2.webp" alt="">
+                            </div>
+                            <div class="choose__banners-item swiper-slide">
+                                <a href="#"></a>
+                                <img src="images/content/choose-banners/choose-banners5.webp" alt="">
+                                <img class="choose__banners-item-img-hover"
+                                    src="images/content/choose-banners/choose-banners5-2.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="choose__brands">
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconAudi'></use>
+                            </svg>
+                            <p>Audi</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconBwm'></use>
+                            </svg>
+                            <p>BMW</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconChangan'></use>
+                            </svg>
+                            <p>Changan</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconCherry'></use>
+                            </svg>
+                            <p>Chery</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconChevrolet'></use>
+                            </svg>
+                            <p>Chevrolet</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconSkoda'></use>
+                            </svg>
+                            <p>Skoda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconSubaru'></use>
+                            </svg>
+                            <p>Subaru</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconSuzuki'></use>
+                            </svg>
+                            <p>Suzuki</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconFord'></use>
+                            </svg>
+                            <p>Ford</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconGeely'></use>
+                            </svg>
+                            <p>Geely</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconHaval'></use>
+                            </svg>
+                            <p>Haval</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMulti.svg#iconHonda'></use>
+                            </svg>
+                            <p>Honda</p>
+                            <span>123</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="dominations">
+        <div class="container">
+            <div class="row main-title main-title--alt">
+                <div class="col-lg-12">
+                    <span>Преимущества</span>
+                    <h2>Чем мы отличаемся</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="dominations__grid">
+                        <div class="dominations__grid-item">
+                            <div class="dominations__grid-item-text">
+                                <h3>Гарантия качества</h3>
+                                <p>
+                                    Мы предоставляем гарантию на техническое состояние автомобилей на 2 года
+                                </p>
+                            </div>
+                            <img src="images/content/dominations/dominations-icon1.webp" alt="">
+                        </div>
+                        <div class="dominations__grid-item">
+                            <div class="dominations__grid-item-text">
+                                <h3>Скидка до 400 000 ₽</h3>
+                                <p>
+                                    При покупке автомобиля в кредит в нашем автосалоне
+                                </p>
+                            </div>
+                            <img src="images/content/dominations/dominations-icon5.webp" alt="">
+                        </div>
+                        <div class="dominations__grid-item">
+                            <div class="dominations__grid-item-text">
+                                <h3>Широкий выбор</h3>
+                                <p>
+                                    У нас широкий выбор авто на любой бюджет
+                                </p>
+                            </div>
+                            <img src="images/content/dominations/dominations-icon3.webp" alt="">
+                        </div>
+                        <div class="dominations__grid-item">
+                            <div class="dominations__grid-item-text">
+                                <h3>Профессиональный сервис</h3>
+                                <p>
+                                    Наши специалисты помогут с выбором авто
+                                </p>
+                            </div>
+                            <img src="images/content/dominations/dominations-icon4.webp" alt="">
+                        </div>
+                        <div class="dominations__grid-item">
+                            <div class="dominations__grid-item-text">
+                                <h3>Одобрение по кредиту</h3>
+                                <p>
+                                    90% клиентов получают одобрение по кредиту
+                                </p>
+                            </div>
+                            <img src="images/content/dominations/dominations-icon2.webp" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

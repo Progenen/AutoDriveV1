@@ -3,7 +3,24 @@
 }
 
 @media (max-width:1220px){
+    // filter
+    .filter {
+        justify-content: space-between;
+        &__select {
+            margin-right: 10px;
+        }
 
+        &__btn {
+            margin-left: 0;
+        }
+    }
+
+    // dominations 1220
+    .dominations {
+        &__grid-item {
+            padding: 30px;
+        }
+    }
 }
 
 @media (max-width:1060px){
@@ -23,10 +40,40 @@
 
 @media (max-width:992px){
 
+    .main__title {
+        margin-bottom: 30px;
+        h2 {
+            font-size: 23px;
+            margin: 10px 0 0 0;
+            line-height: normal;
+        }
+
+        span {
+            font-size: 16px;
+            line-height: normal;
+        }
+    }
+
     // all 992
     .btn {
         font-size: 14px;
         padding: 12.5px 5px;
+    }
+
+    // brands 992
+    .brand {
+        max-width: 220px;
+    }
+
+    // choose 992
+    .choose {
+        &__brands {
+            justify-content: center;
+        }
+    }
+
+    section {
+        padding: 50px 0;
     }
 
     // header 992
@@ -58,6 +105,161 @@
 
         &__menu-list {
             justify-content: flex-end;
+        }
+    }
+
+    // filter 992
+    
+    .filter {
+        flex-wrap: wrap;
+        row-gap: 8px;
+        column-gap: 20px;
+        justify-content: flex-start;
+        padding: 20px 40px 20px 20px;
+        &__select {
+            &--types {
+                display: flex;
+            }
+        }
+
+        &__input {
+            width: 30%;
+            margin-right: 0;
+
+            label {
+                font-weight: 500;
+            }
+
+            input, select {
+                font-weight: 500;
+            }
+        }
+
+        &__btn {
+            max-width: 30%;
+        }
+
+        &__types {
+            display: none;
+        }
+    }
+
+    // offer 992
+    .offer {
+        padding-top: 30px;
+        &__slider {
+            height: 400px;
+        }
+
+        &__slider-item h2 {
+            font-size: 48px;
+        }
+
+        &__slider-item p {
+            font-size: 16px;
+        }
+        
+        .slider__arrow {
+            display: none;
+        }
+
+        .slider__pagination {
+            display: none;
+        }
+
+        &__filter {
+            margin: 0 15px;
+            margin-top: -62px;
+        }
+    }
+
+    // choose 992
+    .choose {
+        &__brands {
+            margin-top: 30px;
+        }
+    }
+
+    // dominats 992
+    .dominations {
+        &__grid {
+            grid-template-columns: 1.3fr 1.85fr;
+            grid-template-rows: repeat(734, 1px);
+        }
+
+        &__grid-item {
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            img {
+            }
+            &:first-child {
+                grid-row: span 429;
+                padding: 30px 40px;
+                img {
+                    max-width: 169px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                h3 {
+                    white-space: nowrap;
+                }
+            }
+            &:nth-child(2) {
+                grid-row: span 232;
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                padding: 40px 30px;
+                img {
+                    max-width: 79px;
+                    margin-top: 0;
+                    margin-right: 20px;
+                }
+            }
+            &:nth-child(3) {
+                order: 3;
+                grid-row: span 305;
+                padding: 30px 40px;
+                margin-top: 20px;
+                img {
+                    width: 100%;
+                    margin-right: 0;
+                }
+            }
+            &:nth-child(4) {
+                order: 5;
+                grid-row: span 252;
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 40px 30px;
+                align-items: center;
+                img {
+                    margin-top: 0;
+                    margin-right: 20px;
+                    max-width: 80px;
+                }
+
+            }
+            &:last-child {
+                grid-row: span 250;
+                display: flex;
+                flex-direction: row-reverse;
+                padding: 40px 30px;
+                align-items: center;
+                img {
+                    margin-top: 0;
+                    margin-right: 20px;
+                    max-width: 80px;
+                }
+            }
         }
     }
 }
@@ -181,6 +383,19 @@
         margin-left: auto;
         padding-right: 15px;
     }
+
+    // dominations
+    .dominations {
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        &__grid-item {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
 }
 
 @media (max-width:576px){
@@ -194,6 +409,73 @@
 
         &__bottom {
             padding: 13px 0;
+        }
+    }
+
+    // filter 576
+    .filter {
+        padding-right: 20px;
+        justify-content: space-between;
+        row-gap: 20px;
+        column-gap: 0px;
+        margin-left: 0;
+        margin-right: 0;
+        &__input {
+            width: 100%;
+        }
+
+        &__input-text {
+            width: 47%;
+        }
+
+        &__btn {
+            max-width: 100%;
+        }
+    }
+
+    // offer 576
+    .offer {
+        &__slider {
+            height: 300px;
+        }
+
+        &__slider-item-inner {
+            padding: 20px 16px;
+        }
+
+        &__slider-item h2 {
+            font-size: 26px;
+        }
+
+        &__filter {
+            margin-top: -30px;
+        }
+    }
+
+    // choose 576
+
+    .choose {
+        &__banners-item {
+            max-width: 158px;
+            height: 220px;
+        }
+
+        &__brands {
+            gap: 8px;
+        }
+    }
+
+    // brand 576
+    .brand {
+        max-width: 31%;
+        flex-direction: column;
+        padding: 12px 15px;
+        span {
+            display: none;
+        }
+        svg {
+            margin-right: 0;
+            margin-bottom: 4px;
         }
     }
 }
