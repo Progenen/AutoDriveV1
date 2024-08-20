@@ -46,7 +46,7 @@ footer {
 
 .container {
     --bs-gutter-x: 4.3rem;
-    max-width: 1390px;
+    max-width: 1365px;
 }
 
 .btn {
@@ -118,6 +118,7 @@ footer {
 
     &__item {
         width: 100%;
+        border-radius: 20px;
     }
 
     &__arrow {
@@ -328,6 +329,55 @@ footer {
         
         svg {
             fill: #BDBDBD;
+        }
+    }
+}   
+
+.input {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    input, select {
+        padding: 15px 13px;
+        border-radius: 8px;
+        border: 1px solid #BFBFBF;
+        background: #FFF;
+        font-size: 14px;
+        font-family: Montserrat, sans-serif;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.26px;
+        &:focus {
+            outline: none;
+        }
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        display: block;
+        cursor: pointer;
+    }
+
+    &__select {
+        position: relative;
+        width: 100%;
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url($sprite + '#smallDown');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 24px;
+            height: 24px;
+            right: 13px;
+            bottom: 15px;
+        }
+        select {
+            appearance: none;
         }
     }
 }

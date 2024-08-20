@@ -21,6 +21,13 @@
             padding: 30px;
         }
     }
+
+    // call 1220
+    .call {
+        &__input, &__ui {
+            width: 30%;
+        }
+    }
 }
 
 @media (max-width:1060px){
@@ -262,6 +269,69 @@
             }
         }
     }
+
+    // call 992
+    .call {
+        padding-bottom: 212px;
+        &__slider {
+            .slider__pagination {
+                bottom: 69px !important;
+            }
+        }
+
+        &__form-text {
+            width: 22.22%;
+
+            h3 {
+                font-size: 16px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &__slider-item-inner {
+        }
+        
+
+        &__form {
+            margin-top: -49px;
+            padding: 30px;
+        }
+
+        &__form-ui-right {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        &__checkbox {
+            font-size: 12px;
+        }
+
+        &__checkbox .checkbox{
+            
+            min-width: 30px;
+            min-height: 30px;
+            width: 30px;
+            height: 30px;
+        }
+
+        &__btn {
+            margin-top: 0;
+            max-width: 310px;
+        }
+
+        &__input {
+            width: 35.2%;
+        }
+
+        &__text-img {
+            bottom: 50px;
+        }
+    }
 }
 
 @media (max-width:876px){
@@ -387,18 +457,44 @@
     // dominations
     .dominations {
         &__grid {
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
         }
 
         &__grid-item {
+            margin-top: 0 !important;
             display: flex;
             flex-direction: row-reverse;
+            padding: 30px 20px !important;
+            justify-content: flex-end;
+            gap: 20px;
+            order: 0 !important;
+            img {
+                max-width: 61px !important;
+                margin-top: 0 !important;
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            &:nth-child(4) {
+                order: 1 !important;
+            }
         }
     }
 }
 
 @media (max-width:576px){
+
+    // main-title
+    .main-title h2 {
+        font-size: 26px;
+    }
+
+    .main-title span {
+        font-size: 16px;
+    }
+
     // header 576
     .header {
 
@@ -477,6 +573,11 @@
             margin-right: 0;
             margin-bottom: 4px;
         }
+    }
+
+    // container 576
+    .container {
+    --bs-gutter-x: 1.5rem;
     }
 }
 
