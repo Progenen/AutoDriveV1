@@ -1,5 +1,14 @@
 @media (max-width:1440px){
+    // footer 1440
+    .footer {
+        &__menu-link {
+            font-size: 16px;
+        }
 
+        address, &__schedule, &__phone {
+            font-size: 16px;
+        }
+    }
 }
 
 @media (max-width:1220px){
@@ -26,6 +35,37 @@
     .call {
         &__input, &__ui {
             width: 30%;
+        }
+    }
+
+}
+
+@media (max-width:1200px){
+    
+    // footer 1200
+    .footer {
+        &__col--info {
+            display: flex;
+            column-gap: 80px;
+        }
+
+        &__btn {
+            margin-top: 0;
+            max-width: 220px;
+        }
+
+        &__info-bottom {
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+        }
+
+        &__schedule {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-right: 9px;
+            margin-right: 9px;
+            border-right: 1px solid #fff ;
         }
     }
 }
@@ -332,6 +372,48 @@
             bottom: 50px;
         }
     }
+
+    // present 992
+    .present {
+        background-image: url("../images/content/present/present-bg-tablet.webp");
+        &__grid {
+            grid-template-columns: 5fr 6fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        &__grid-item {
+            &:nth-child(1) {
+                grid-row: span 2;
+                padding: 30px 40px;
+                img {
+                    max-width: 150px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+               .present__grid-item-text {
+                margin-top: 27px;
+               } 
+            }
+            &:nth-child(2), &:nth-child(3) {
+                flex-direction: row-reverse;
+                padding: 40px 30px;
+                align-items: center;
+                img {
+                    max-width: 85px;
+                }
+            }
+
+            h3 {
+                font-size: 20px;
+                margin-bottom: 7px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    }
 }
 
 @media (max-width:876px){
@@ -445,6 +527,7 @@
     }
 
     .mob-menu {
+        height: 100%;
         width: 300px;
         display: flex;
         flex-direction: column;
@@ -468,6 +551,7 @@
             flex-direction: row-reverse;
             padding: 30px 20px !important;
             justify-content: flex-end;
+            align-items: center;
             gap: 20px;
             order: 0 !important;
             img {
@@ -475,12 +559,129 @@
                 margin-top: 0 !important;
                 margin-left: 0 !important;
                 margin-right: 0 !important;
+                height: fit-content;
             }
 
             &:nth-child(4) {
                 order: 1 !important;
             }
+
+            h3 {
+                font-size: 18px;
+            }
+
+            p {
+                font-size: 12px;
+            }
         }
+    }
+
+    // footer 768
+    .footer {
+        padding: 30px 0;
+        .row {
+            row-gap: 30px;
+        }
+
+        &__menu-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        &__menu-item {
+            text-align: center;
+        }
+
+        &__logo {
+            max-width: 220px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__col--info {
+            flex-direction: column-reverse;
+            row-gap: 30px;
+            text-align: center;
+        }
+
+        &__info-bottom {
+            justify-content: center;
+        }
+
+        &__btn {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__alert {
+            font-size: 12px;
+        }
+
+    }
+
+    // call 768
+
+    .call {
+        padding-bottom: 126px;
+        &__slider {
+            height: 300px;
+
+            .slider__pagination {
+                bottom: 60px;
+            }
+
+            .slider__arrow {
+                display: none;
+            }
+        }
+
+        &__slider-item-inner {
+            padding: 20px;
+            h2 {
+                font-size: 26px;
+                margin-bottom: 5px;
+                font-weight: 600;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+
+        &__form {
+            margin-top: -40px;
+            flex-direction: column;
+        }
+
+        &__form-text {
+            width: 100%;
+        }
+
+        &__input {
+            width: 100%;
+        }
+
+        &__form-ui-right {
+            flex-direction: column-reverse;
+            row-gap: 10px;
+        }
+
+        &__checkbox {
+            max-width: 100%;
+            width: 100%;
+        }
+
+        &__btn {
+            max-width: 100%;
+            width: 100%;
+        }
+    }
+
+    // model 768
+    .model {
+        &__catalog .card:last-child, &__catalog .card:nth-child(3) {
+            display: none;
+        } 
     }
 }
 
@@ -578,6 +779,56 @@
     // container 576
     .container {
     --bs-gutter-x: 1.5rem;
+    }
+
+    // present 576
+    .present {
+        background-image: url("../images/content/present/present-bg-mob.webp");
+        &__grid {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+        }
+
+        &__grid-item:nth-child(1), &__grid-item:nth-child(2), &__grid-item:nth-child(3) {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 30px 20px;
+            img {
+                max-width: 70px;
+                margin-left: 0;
+            }
+
+            .present__grid-item-text {
+                margin-top: 0;
+                h3 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 0.26px;
+                }
+            }
+        }
+    }
+
+    // footer 576
+    .footer {
+
+        &__menu-list {
+            row-gap: 20px;
+            justify-content: space-between;
+        }
+
+        &__menu-item {
+
+        }
+
+        &__menu-link {
+            font-size: 14px;
+        }
     }
 }
 

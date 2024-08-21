@@ -4,15 +4,17 @@ import { EffectFade } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector(".header");
-    // const burger = document.querySelector(".header__burger");
-    // const menu = document.querySelector(".header__col--menu");
-    // const header = document.querySelector("header");
+    const select = document.querySelectorAll("select");
 
-    // burger.addEventListener("click", () => {
-    //     burger.classList.toggle("active");
-    //     menu.classList.toggle("active");
-    //     document.body.classList.toggle("lock");
-    // });
+    select.forEach(el => {
+        el.addEventListener("focus", () => {
+            el.classList.add("active");
+        });
+
+        el.addEventListener("blur", () => {
+            el.classList.remove("active");
+        })
+    })
 
     if (document.querySelector(".slider")) {
         const slider = new Swiper('.slider', {
@@ -62,6 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             }
         });
+    }
+
+    if (window.innerWidth <= 1220) {
+        const footerBtn = document.querySelector(".footer__btn");
+        const footerColInfo = document.querySelector(".footer__col--info");
+
+        footerColInfo.prepend(footerBtn);
     }
 
     if (window.innerWidth <= 992) {
