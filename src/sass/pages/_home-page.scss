@@ -169,24 +169,31 @@
     &__slider-item {
     }
 
+    &__catalog {
+        row-gap: 30px;
+    }
+
     &__btn {
         margin-top: 30px;
-        max-width: 100%;
+        max-width: 315px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 .card {
     position: relative;
     background-color: #fff;
     color: #000;
-    max-width: 315px;
     border-radius: 20px;
     border: 1px solid #BFBFBF;
     display: flex;
     overflow: hidden;
+    width: 100%;
     img {
         width: 100%;
-        object-fit: cover;
         max-height: 229px;
+        object-fit: cover;
+        max-height: auto;
         border-radius: 20px;
         overflow: hidden;
     }
@@ -255,10 +262,13 @@
 
     &__btn {
         margin-top: 20px;
+        width: 100%;
+        max-width: 100%;
     }
 
     
     &__front {
+        width: 100%;
     }
 
     &.active .card__back {
@@ -311,6 +321,7 @@
 
 .input-slider {
     margin-top: 20px;
+    color: #000;
     &__header {
         display: flex;
         align-items: center;
@@ -362,6 +373,7 @@
         font-weight: 500;
         width: 19.59px;
         padding-left: 4px;
+        font-family: Inter;
     }
 
     &__range {
@@ -407,21 +419,6 @@
             display: none;
         }
     }
-}
-
-.model {
-    &__catalog {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        min-width: 315px;
-    }
-
-    
 }
 
 .call {

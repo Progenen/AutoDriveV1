@@ -407,7 +407,7 @@ section {
         line-height: normal;
     }
 
-    h2 {
+    h2, .main-title__title {
         font-size: 40px;
         font-style: normal;
         font-weight: 600;
@@ -418,6 +418,12 @@ section {
 
     &--alt h2{
         color: #fff;
+    }
+
+    &--light {
+        h2 {
+            font-weight: 500;
+        }
     }
 }
 
@@ -437,7 +443,7 @@ section {
     width: 100%;
     margin-right: 20px;
     margin-bottom: 20px;
-    svg {
+    svg, img {
         width: 28px;
         height: 28px;
         fill: #000;
@@ -453,5 +459,32 @@ section {
 
     p {
         margin: 0;
+    }
+}
+
+.brands {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .brand {
+        margin: 0;
+    }
+
+}
+
+.section-white {
+    background-color: #fff;
+}
+
+
+.clue {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    svg {
+        width: 24px;
+        height: 24px;
     }
 }

@@ -1,0 +1,2815 @@
+@@include("./parts/header.html")
+<main>
+    <section class="breadcrumbs ">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="./index.html" class="breadcrumbs__link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            <a href="./catalog-page.html" class="breadcrumbs__link">
+                                Каталог
+                            </a>
+                        </li>
+                        <li class="breadcrumbs__item">
+                            Модельный ряд Mazda
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="model-offer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="model-offer__model-banner model-banner" style="background-image: url('./images/content/model/model1.webp');">
+                        <div class="card-model">
+                            <img src="images/icons/logos-big/mazda.webp" alt="">
+                            <span>Mazda</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="catalog-model section-white">
+        <div class="container">
+            <div class="row align-items-center catalog__result-title main-title">
+                <div class="col-lg-9 col-md-8">
+                    <span>Каталог</span>
+                    <h2 class="main-title__title">Выбери свою марку</h2>
+                </div>
+                <div class="col-lg-3 col-md-4 d-none d-md-block">
+                    <form class="catalog__sort" action="#">
+                        <div class="card__back-input input">
+                            <label>Сортировать по</label>
+                            <div class="input__select">
+                                <select name="catalogSort">
+                                    <option value="downUp">
+                                        По возрастанию цены
+                                    </option>
+                                    <option value="updown">
+                                        По убыванию цены
+                                    </option>
+                                    <option value="Mercedes">
+                                        По популярности
+                                    </option>
+                                </select>
+                                <span></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="catalog__items row">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-card col-12">
+                    <div class="card">
+                        <div class="card__front">
+                            <div class="card__head">
+                                <img src="images/content/card/card-photo.webp" alt="">
+                            </div>
+                            <div class="card__body">
+                                <h3>Mazda CX–50</h3>
+                                <ul>
+                                    <li>Кузов: Кроссовер</li>
+                                    <li>В наличии: 75 авто</li>
+                                </ul>
+                                <div class="card__price">
+                                    <span class="card__price-now">
+                                        3 130 000 ₽
+                                    </span>
+                                    <button class="card__clue">
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMono.svg#clue'></use>
+                                        </svg>
+                                    </button>
+                                    <span class="card__price-before">
+                                        3 500 000 ₽
+                                    </span>
+                                </div>
+                                <span class="card__credit">от 44 380 ₽/мес. без взноса</span>
+                                <button class="card__btn btn btn--red">Купить в кредит</button>
+                            </div>
+                        </div>
+                        <div class="card__back">
+                            <form action="#">
+                                <h3>
+                                    Рассчитать кредит
+                                </h3>
+                                <div class="card__back-input input">
+                                    <label>Кузов</label>
+                                    <div class="input__select">
+                                        <select name="mark">
+                                            <option value="other">
+                                                Любой
+                                            </option>
+                                            <option value="BMW">
+                                                Седан
+                                            </option>
+                                            <option value="Mercedes">
+                                                Лифтбэк
+                                            </option>
+                                        </select>
+                                        <span></span>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Срок кредитования</label>
+                                        <div class="input-slider__res input-slider__res--deadline">
+                                            <span class="input-slider__res-val">96</span>  месяцев
+                                        </div>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--deadline" data-rangeslider type="range"
+                                            min="10" max="1000" step="10" value="300" data-orientation="vertical" />
+                                    </div>
+                                    <div class="input-slider__coord">
+                                        <div class="input-slider__coord-item">
+                                            2
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            6
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            12
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            24
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            36
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            48
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            72
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            84
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            96
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-input card__back-input-slider input input-slider">
+                                    <div class="input-slider__header">
+                                        <label for="">Первоначальный взнос:</label>
+                                        <span class="input-slider__res input-slider__res--percent">
+                                            <span class="input-slider__res-val">0</span> ₽
+                                        </span>
+                                    </div>
+                                    <div class="input-slider__range">
+                                        <input class="input-slider__range--percent" type="range" step="10" min="0"
+                                            max="80">
+                                    </div>
+                                    <div class="input-slider__coord input-slider__coord--percent">
+                                        <div class="input-slider__coord-item">
+                                            0%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            10%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            20%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            30%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            40%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            50%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            60%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            70%
+                                        </div>
+                                        <div class="input-slider__coord-item">
+                                            80%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card__back-res">
+                                    <span>Ваш платёж:</span>
+                                    <span class="card__back-res-val">
+                                        <span></span>
+                                        ₽
+                                    </span>
+                                </div>
+                                <button type="submit" class="card__back-btn btn btn--red">Оставить заявку</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="catalog__pag">
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link">
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/spriteMulti.svg#smallDown'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link catalog__pag-link--cur">
+                                1
+                            </a>
+                        </li>
+
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link">
+                                2
+                            </a>
+                        </li>
+
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link">
+                                3
+                            </a>
+                        </li>
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link">
+                                4
+                            </a>
+                        </li>
+                        <li class="catalog__pag-item">
+                            <a href="#" class="catalog__pag-link">
+                                <svg>
+                                    <use xlink:href='svg/dest/stack/spriteMulti.svg#smallDown'></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="catalog-brands section-white">
+        <div class="container">
+            <div class="row align-items-center catalog-brands__title main-title ">
+                <div class="col-lg-10 col-md-8">
+                    <span>Каталог</span>
+                    <h2>Выбери свою марку</h2>
+                </div>
+                <div class="col-lg-2 col-md-4 d-none d-md-block">
+                    <a href="#" class="choose__btn btn btn--white">
+                        Показать все
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="catalog-brands__items brands">
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconAudi.svg" alt="">
+                            <p>BMW</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconBMW.svg" alt="">
+                            <p>Changan</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconChangan.svg" alt="">
+                            <p>Chery</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconChery.svg" alt="">
+                            <p>Chevrolet</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconChevrolet.svg" alt="">
+                            <p>Skoda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconSkoda.svg" alt="">
+                            <p>Subaru</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconSubaru.svg" alt="">
+                            <p>Suzuki</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+
+                            <img src="images/icons/brandIcons/iconSuzuki.svg" alt="">
+                            <p>Ford</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconFord.svg" alt="">
+                            <p>Geely</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconGeely.svg" alt="">
+                            <p>Haval</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconHaval.svg" alt="">
+                            <p>Honda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconHonda.svg" alt="">
+                            <p>Honda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconHyundai.svg" alt="">
+                            <p>Hyundai</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconInfiniti.svg" alt="">
+                            <p>Infiniti</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconJeep.svg" alt="">
+                            <p>Jeep</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconKia.svg" alt="">
+                            <p>Kia</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconLada.svg" alt="">
+                            <p>Lada</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconLandRover.svg" alt="">
+                            <p>Land Rover</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconLexus.svg" alt="">
+                            <p>Lexus</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconLifan.svg" alt="">
+                            <p>Lifan</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconMazda.svg" alt="">
+                            <p>Mazda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconMercedesBenz.svg" alt="">
+                            <p>Mercedes-Benz</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconMitsubishi.svg" alt="">
+                            <p>Mitsubishi</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconNissan.svg" alt="">
+                            <p>Mitsubishi</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconOpel.svg" alt="">
+                            <p>Opel</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconPeugeot.svg" alt="">
+                            <p>Peugeot</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconPorsche.svg" alt="">
+                            <p>Porsche</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconRenault.svg" alt="">
+                            <p>Renault</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconSkoda.svg" alt="">
+                            <p>Skoda</p>
+                            <span>123</span>
+                        </a>
+                        <a class="brand" href="#">
+                            <img src="images/icons/brandIcons/iconSuzuki.svg" alt="">
+                            <p>Suzuki</p>
+                            <span>123</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-12 d-block d-md-none">
+                    <a href="#" class="btn btn--white">
+                        Показать все
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include("./parts/call.html")
+    @@include("./parts/present.html")
+</main>
+@@include("./parts/footer.html")

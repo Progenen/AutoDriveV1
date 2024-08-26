@@ -1,0 +1,91 @@
+.catalog {
+    background-color: #fff;
+
+    .filter {
+        border: 1px solid #BFBFBF;
+        margin-bottom: 40px;
+    }
+
+    &__filter-input-select {
+        width: 21.81%;
+    }
+
+    &__filter-input-text {
+        width: 14.54%;
+    }
+
+    &__filter-btn {
+        
+        max-width: 21.63%;
+    }
+
+    &__result-title {
+        .main-title__title {
+            font-weight: 500;
+        }
+    }
+
+    &__sort {
+        label {
+            color:#000;
+        }
+    }
+
+    &__items {
+        row-gap: 20px;
+    }
+
+    &__pag {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin: 40px 0 0 0;
+        padding: 0;
+    }
+
+    &__pag-item {
+        display: flex;
+        align-items: center;
+    }
+
+    &__pag-link {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #BFBFBF;
+        text-decoration: none;
+        transition: .2s;
+        svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        &--cur {
+            color: #000;
+        }
+
+        &:hover {
+            color: #000;
+        }
+    }
+
+    &__pag-item:first-child {
+        transform: rotate(90deg);
+    }
+
+    &__pag-item:last-child {
+        transform: rotate(-90deg);
+    }
+
+}
+
+.catalog-brands {
+    &__title {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        max-width: 100%;
+        margin-top: 30px;
+    }
+}
