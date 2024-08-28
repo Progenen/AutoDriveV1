@@ -3,6 +3,7 @@
 // Libs 
 @import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css";
 @import "../../node_modules/swiper/swiper-bundle.min.css";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox/fancybox.css";
 @import "./libs/ion.rangeSlider.min.css";
 
 // Main
@@ -14,5 +15,6 @@
 @import "pages/catalog-page";
 @import "pages/model-page";
 @import "pages/model-single-page";
+@import "pages/credit-page";
 @import "footer";
 @import "media";

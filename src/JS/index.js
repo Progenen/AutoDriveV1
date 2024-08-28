@@ -1,6 +1,7 @@
 import Swiper from "swiper";
 import { Navigation, Pagination, FreeMode } from "swiper/modules";
 import { EffectFade } from 'swiper/modules';
+import { Fancybox } from "@fancyapps/ui";
 
 document.addEventListener('DOMContentLoaded', function () {
     const header = document.querySelector(".header");
@@ -74,20 +75,31 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (window.innerWidth <= 1200) {
-        const singleCalcBtn = document.querySelector(".model-single-calc__btn");
-        const singleCalcRes = document.querySelector(".model-single-calc__results");
-        const singleCalcMdColBtn = document.querySelector(".model-single-calc__col--md-btn");
-        const singleCalcMdColRes = document.querySelector(".model-single-calc__col--md-results");
-
-        singleCalcMdColBtn.append(singleCalcBtn);
-        singleCalcMdColRes.append(singleCalcRes);
-    }
+        if (document.querySelector(".model-single-calc")) {
+            const singleCalcBtn = document.querySelector(".model-single-calc__btn");
+            const singleCalcRes = document.querySelector(".model-single-calc__results");
+            const singleCalcMdColBtn = document.querySelector(".model-single-calc__col--md-btn");
+            const singleCalcMdColRes = document.querySelector(".model-single-calc__col--md-results");
+    
+            singleCalcMdColBtn.append(singleCalcBtn);
+            singleCalcMdColRes.append(singleCalcRes);
+        }
+     }
 
     if (window.innerWidth <= 992) {
         const headerColUi = document.querySelector(".header__col--ui");
         const headerRow = header.querySelector(".row");
         
         headerRow.append(headerColUi);
+
+        if (document.querySelector(".credit__form")) {
+            const creditBtn = document.querySelector(".credit__form-btn");
+            const creditRes = document.querySelector(".credit__form-results");
+            const creditRowBottom = document.querySelector(".credit__form-bottom");
+
+            creditRowBottom.append(creditRes);
+            creditRowBottom.append(creditBtn);
+        }
     }
 
     if (window.innerWidth <= 768) {
@@ -118,7 +130,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.querySelectorAll("[src-mob]").forEach(el => {
             el.setAttribute("src", el.getAttribute("src-mob"));
-        })
+        });
+
+        if (document.querySelector(".model-single-complect__item-info")) {
+            const modelSingleCompOption = document.querySelectorAll(".model-single-complect__item-option");
+            const modelSingleCompUi = document.querySelectorAll(".model-single-complect__item-ui");
+            const modelSingleCompInfo = document.querySelectorAll(".model-single-complect__item-info");
+
+            for(let i = 0; i <= modelSingleCompOption.length - 1; i++) {
+                console.log(i);
+                modelSingleCompOption[i].insertBefore(modelSingleCompInfo[i], modelSingleCompUi[i])
+            }
+        }
     }
 
     if (document.querySelector(".card")) {
@@ -137,6 +160,21 @@ document.addEventListener('DOMContentLoaded', function () {
 
         singleCalcForm.append(singleCalcBtn);
     }
+
+    if (document.querySelector(".spoiler")) {
+        $(".spoiler").each(function(i, el) {
+            $(el).on("click", () => {
+                $(el).toggleClass("active");
+                $(el).next().slideToggle(100)     
+            })
+        })
+    }
+
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
+
+      
 });
 
 let deadline; 
