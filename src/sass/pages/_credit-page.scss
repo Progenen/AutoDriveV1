@@ -35,6 +35,8 @@
         max-width: 1208px;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+        z-index: 2;
         margin-top: -62px;
     }
 
@@ -172,65 +174,121 @@
             margin: 16px 0;
         }
     }
-}
-.container {
-}
-.row {
-}
-.col-lg-12 {
-}
-.clue {
-}
-.btn {
 
-    &--red {
+    &__img-text {
+        margin-top: -30px;
+        position: relative;
+        z-index: 0;
+        width: 100%;
     }
 }
-.input {
-
-    &__select {
-    }
-}
-.card {
-
-    &__back-input {
-    }
-
-    &__back-input-slider {
-    }
-}
-.input-slider {
-
-    &__header {
+.docs {
+    background-image: url('../images/content/docs/docs-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &__title {
+        margin-bottom: 60px;
     }
 
-    &__res {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 
-        &--deadline {
-        }
-
-        &--percent {
+    &__item {
+        max-width: 427px;
+        width: 100%;
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 20px;
+        opacity: .8;
+        background-color: #2C2C2E;
+        backdrop-filter: blur(10px);
+        &:first-child, &:nth-child(2), &:nth-child(3) {
+            width: 26.667%;
         }
     }
 
-    &__res-val {
+    &__item-count {
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 140%;
+        color: $colorRed;
     }
 
-    &__range {
+    &__item-text {
+        font-weight: 500;
+        line-height: 140%;
+        font-size: 18px;
+    }
+}
 
-        &--deadline {
-        }
+.hits {
 
-        &--percent {
-        }
+    &__items {
+        display: flex;
+        justify-content: space-between;
     }
 
-    &__coord {
-
-        &--percent {
-        }
+    &__item {
     }
 
-    &__coord-item {
+    &__item-val {
+        font-size: 60px;
+        font-weight: 600;
+        color: $colorRed;
+        line-height: normal;
+    }
+
+    &__item-name {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+        color: #000;
+    }
+}
+
+.banks {
+    background-image: url('../images/content/banks/banks-bg.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 120px 0;
+    &__left {
+        position: relative;
+        max-width: 1065px;
+        width: 100%;
+        padding: 40px;
+        border-radius: 20px;
+        background: rgba(44, 44, 46, 0.70);
+
+        backdrop-filter: blur(5px);
+    }
+
+    &__slider {
+        width: 100%;
+        height: 230px;
+        height: initial;
+        overflow: hidden;
+        position: initial;
+    }
+
+    &__slider-container {
+    }
+
+    &__slider-wrapper {
+    }
+
+    &__slider-item {
+        height: 50px;
+        img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
+        }
     }
 }

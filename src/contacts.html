@@ -1,0 +1,99 @@
+@@include("./parts/header.html")
+<main>
+    <section class="contacts">
+        <div class="container">
+            <div
+                class="contacts__title row align-items-center main-title main-title--m1 main-title--alt main-title--light">
+                <div class="col-lg-12">
+                    <span>Контакты</span>
+                    <h2>На связи с вами</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contacts__map">
+                        <div class="contacts__map-iframe" style="position:relative;overflow:hidden;"><a href="https://yandex.kz/maps/ru/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.kz/maps/ru/213/moscow/?indoorLevel=1&ll=37.629997%2C55.755521&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=37.630492%2C55.755988&whatshere%5Bzoom%5D=16.72&z=16.72" style="color:#eee;font-size:12px;position:absolute;top:14px;">Старая площадь — Яндекс Карты</a><iframe src="https://yandex.kz/map-widget/v1/?indoorLevel=1&ll=37.629997%2C55.755521&mode=whatshere&whatshere%5Bpoint%5D=37.630492%2C55.755988&whatshere%5Bzoom%5D=16.72&z=16.72" allowfullscreen="true" style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row contacts__info">
+                <div class="col-lg-4 col-md-4 contacts__info-item">
+                    <div class="contacts__info-item-inner">
+                        <address>
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#location'></use>
+                            </svg>
+                            г. Москва, Варшавское шоссе 4
+                        </address>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 contacts__info-item">
+                    <div class="contacts__info-item-inner">
+                        <svg>
+                            <use xlink:href='svg/dest/stack/spriteMono.svg#watch'></use>
+                        </svg>
+                        с 9:00 до 21:00
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 contacts__info-item">
+                    <div class="contacts__info-item-inner">
+                        <a href="tel:#">
+                            <svg>
+                                <use xlink:href='svg/dest/stack/spriteMono.svg#phone'></use>
+                            </svg>
+                            +7 999 999-99-99
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts-call">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div
+                        class="contacts-call__title row align-items-center main-title main-title--m1 main-title--alt main-title--light">
+                        <div class="col-lg-12">
+                            <span>Заказ звонка</span>
+                            <h2>Оставьте заявку и мы перезвоним</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-10">
+                    <form action="#" class="contacts-call__form">
+                        <div class="contacts-call__input input">
+                            <label for="">Ваше имя</label>
+                            <input type="text" id="" placeholder="Имя">
+                        </div>
+                        <div class="contacts-call__input input">
+                            <label for="">Телефон</label>
+                            <input type="text" id="" placeholder="+7 900 000-00-00">
+                        </div>
+                        <div class="contacts-call__form-ui">
+                            <div class="contacts-call__checkbox">
+                                <div class="checkbox">
+                                    <input id="callFormAgreement" type="checkbox" name="agreement">
+                                    <span>
+                                        <svg>
+                                            <use xlink:href='svg/dest/stack/spriteMulti.svg#check'></use>
+                                        </svg>
+                                    </span>
+                                </div>
+                                <label for="callFormAgreement">Я даю согласие на обработку персональных
+                                    данных</label>
+                            </div>
+                            <button class="contacts-call__btn btn btn--red">
+                                Заказать звонок
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    @@include("./parts/present.html")
+</main>
+@@include("./parts/footer.html")
