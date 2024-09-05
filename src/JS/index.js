@@ -100,14 +100,14 @@ document.addEventListener('DOMContentLoaded', function () {
             creditRowBottom.append(creditRes);
             creditRowBottom.append(creditBtn);
         }
-        
+
 
         if (document.querySelector("[data-md-bg]")) {
             const dataBgItems = document.querySelectorAll("[data-md-bg]");
 
             dataBgItems.forEach(el => {
                 console.log(el.getAttribute("data-md-bg"));
-                el.style.backgroundImage = `url(${el.getAttribute("data-md-bg")})`; 
+                el.style.backgroundImage = `url(${el.getAttribute("data-md-bg")})`;
             })
         }
     }
@@ -153,16 +153,79 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
 
-        
+
         if (document.querySelector("[data-sm-bg]")) {
             const dataBgItems = document.querySelectorAll("[data-sm-bg]");
 
             dataBgItems.forEach(el => {
                 console.log(el.getAttribute("data-sm-bg"));
-                el.style.backgroundImage = `url(${el.getAttribute("data-sm-bg")})`; 
+                el.style.backgroundImage = `url(${el.getAttribute("data-sm-bg")})`;
             })
         }
     }
+
+    let deadline;
+    let deadlineFixed;
+    let contribution;
+    let summ = 6000000;
+    let res;
+    $('.input-slider__range--deadline').ionRangeSlider({
+        values: ["2", "6", "12", "24", "36", "48", "60", "72", "84", "96"],
+        hide_min_max: true,
+        hide_from_to: true,
+        onChange: (el) => {
+            el.input.parent().parent().find(".input-slider__res--deadline .input-slider__res-val").text(el.from_value);
+            deadline = el.from_value;
+            if (deadline != undefined && contribution != undefined && summ != undefined) {
+                res = (summ - contribution) / deadline;
+                if (el.input.closest(".card__back").length > 0) {
+                    el.input.closest('.card__back').find(".card__back-res-val span").text(Math.round(res));
+                } else {
+                    const contribEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--contribution span");
+                    const deadlineEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--deadline span");
+                    const payEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--pay span");
+
+                    deadlineFixed = deadline / 12 < 1 ? (deadline / 12).toFixed(1) : Math.round((deadline / 12));
+
+                    contribEl.text(contribution);
+                    deadlineEl.text(deadlineFixed >= 5 ? deadlineFixed + " лет" : deadlineFixed + " года");
+                    payEl.text(Math.round(res))
+                }
+            } else {
+                res = 0;
+            }
+        }
+    })
+    $(".input-slider__range--percent").ionRangeSlider({
+        values: ["0", "10", "20", "30", "40", "50", "60", "70", "80"],
+        hide_min_max: true,
+        hide_from_to: true,
+        onChange: (el) => {
+            const parent = el.input.closest(".card__back").length ? el.input.closest(".card__back") : el.input.closest(".big-calc");
+
+            contribution = Math.round(summ * (el.from_value / 100));
+
+            el.input.parent().parent().find(".input-slider__res--percent .input-slider__res-val").text(contribution);
+            if (deadline != undefined && contribution != undefined && summ != undefined) {
+                res = (summ - contribution) / deadline;
+                if (el.input.closest(".card__back").length > 0) {
+                    el.input.closest('.card__back').find(".card__back-res-val span").text(Math.round(res));
+                } else {
+                    const contribEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--contribution span");
+                    const deadlineEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--deadline span");
+                    const payEl = el.input.closest('.big-calc').find(".big-calc__result-item-val--pay span");
+
+                    deadlineFixed = deadline < 1 ? (deadline / 12).toFixed(1) : Math.round((deadline / 12));
+
+                    contribEl.text(contribution);
+                    deadlineEl.text(deadlineFixed >= 5 ? deadlineFixed + " лет" : deadlineFixed + " года");
+                    payEl.text(Math.round(res))
+                }
+            } else {
+                res = 0;
+            }
+        }
+    });
 
     if (document.querySelector(".card")) {
         const cards = document.querySelectorAll(".card");
@@ -223,37 +286,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
 });
 
-let deadline;
-let contribution;
-let summ = 6000000;
-let res;
-$('.input-slider__range--deadline').ionRangeSlider({
-    values: ["2", "6", "12", "24", "36", "48", "60", "72", "84", "96"],
-    hide_min_max: true,
-    hide_from_to: true,
-    onChange: (el) => {
-        el.input.parent().parent().find(".input-slider__res--deadline .input-slider__res-val").text(el.from_value);
-        deadline = el.from_value;
-        if (deadline != undefined && contribution != undefined && summ != undefined) {
-            res = (summ - contribution) / deadline;
-            el.input.parent().parent().parent().find(".card__back-res-val span").text(Math.round(res));
-        } else {
-            res = 0;
-        }
-    }
-})
-$(".input-slider__range--percent").ionRangeSlider({
-    values: ["0", "10", "20", "30", "40", "50", "60", "70", "80"],
-    hide_min_max: true,
-    hide_from_to: true,
-    onChange: (el) => {
-        contribution = Math.round(summ * (el.from_value / 100))
-        el.input.parent().parent().find(".input-slider__res--percent .input-slider__res-val").text(contribution);
-        if (deadline != undefined && contribution != undefined && summ != undefined) {
-            res = (summ - contribution) / deadline;
-            el.input.parent().parent().parent().find(".card__back-res-val span").text(Math.round(res));
-        } else {
-            res = 0;
-        }
-    }
-});
