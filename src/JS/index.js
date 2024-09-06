@@ -284,5 +284,29 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+        Fancybox.bind('[data-fancybox-modal]', {
+            mainClass: "modal",
+            on: {
+                "reveal": (fancybox, slide) => {
+                    const modal = slide.contentEl;
+                    const card = slide.triggerEl.parentNode;
+                    const autoNameInp = modal.querySelector("[name=autoName]");
+                    const creditDeadlineInp = modal.querySelector("[name=creditDeadline]");
+                    const creditContributionInp = modal.querySelector("[name=creditContribution]");
+                    const creditPayInp = modal.querySelector("[name=creditPay");
+                    const autoName = card.querySelector("[name=autoName]").value;
+                    const creditDeadline = card.querySelector(".input-slider__res--deadline span").innerText;
+                    const creditConribution = card.querySelector(".input-slider__res--percent span").innerText;
+                    const creditPay = card.querySelector(".card__back-res .credit__back-res-val").innerText;
+
+                    autoNameInp.value = autoName ? autoName : "Не указано";
+                    creditDeadlineInp.value = creditDeadline ? creditDeadline : "Не указано";
+                    creditContributionInp.value = creditConribution ? creditConribution : "Не указано";
+                    creditPayInp.value = creditPay ? creditPay : "Не указано";
+
+                }
+            }
+        });
+
 });
 

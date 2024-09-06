@@ -1038,6 +1038,52 @@
             font-weight: 500;
         }
     }
+
+    // modal 992
+
+    .modal {
+        .fancybox__content>.f-button.is-close-btn {
+            top: 37.5px;
+            right: 30px;
+        }
+    }
+
+    .modal-content {
+        max-width: 578px;
+        padding: 30px;
+        &__title {
+            font-family: Montserrat;
+            font-size: 32px;
+        }
+
+        &__descr {
+            font-family: Montserrat;
+            margin-bottom: 27px;
+        }
+
+        &__form-input {
+            width: 48.07%;
+        }
+
+        &__form-checkbox {
+            .checkbox {
+                min-width: 30px;
+                min-height: 30px;
+            }
+
+            label {
+                font-weight: 500;
+                font-size: 12px;
+                letter-spacing: 0.26px;
+                line-height: normal;
+                max-width: 193px;
+            }
+        }
+
+        &__form-btn {
+            max-width: 249px;
+        }
+    }
 }
 
 @media (max-width:876px){
@@ -1354,6 +1400,10 @@
         max-width: 315px;
         margin-left: auto;
         margin-right: auto;
+
+        img {
+            max-height: 200px;
+        }
     }
 
     .col-card {
@@ -1897,6 +1947,50 @@
     // section
     .section {
         padding: 40px 0;
+    }
+
+    // modal 768
+    .modal {
+        .fancybox__content>.f-button.is-close-btn {
+            top: 22.5px;
+            right: 20px;
+        }
+    }
+
+    .modal-content {
+        padding: 20px;
+        max-width: 328px;
+
+        &__title {
+            font-size: 26px;
+            font-weight: 600;
+            line-height: 110%;
+            margin-bottom: 30px;
+        }
+
+        &__descr {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        &__form {
+            gap: 10px;
+        }
+
+        &__form-input {
+            width: 100%;
+        }
+
+        &__form-bottom {
+            margin-top: 30px;
+            flex-direction: column-reverse;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        &__form-btn {
+            max-width: 100%;
+        }
     }
 }
 
