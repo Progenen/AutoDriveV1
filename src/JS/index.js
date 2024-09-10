@@ -56,10 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const modelSlider = new Swiper(".model__slider", {
             modules: [FreeMode],
             spaceBetween: 12,
-            slidesPerView: 4,
+            slidesPerView: "auto",
             slideToClickedSlide: true,
             freeMode: true,
             breakpoints: {
+                992: {
+                    slidesPerView: 4,
+
+                },
                 576: {
                     spaceBetween: 20
                 }
