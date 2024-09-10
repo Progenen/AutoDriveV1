@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (document.querySelector(".model")) {
+    if (document.querySelector(".model") && window.innerWidth >= 576) {
         const modelSlider = new Swiper(".model__slider", {
             modules: [FreeMode],
             spaceBetween: 12,
@@ -64,8 +64,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     slidesPerView: 4,
 
                 },
+                768: {
+                    slidesPerView: 2,
+                },
                 576: {
-                    spaceBetween: 20
+                    spaceBetween: 20,
                 }
             }
         });

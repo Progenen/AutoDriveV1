@@ -1373,9 +1373,18 @@
 
     // model 768
     .model {
-        &__catalog .col-lg-3:last-child, &__catalog .col-lg-3:nth-child(3) {
+        &__slider-slide:last-child, &__slider-slide:nth-child(3) {
             display: none;
         } 
+
+        &__slider-slide .card {
+            max-width: 100%;
+        }
+
+        &__slider-wrapper {
+            row-gap: 30px;
+            flex-direction: column;
+        }
     }
 
     // filter 768
