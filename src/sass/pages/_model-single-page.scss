@@ -1,5 +1,4 @@
 .model-single-offer {
-
     &__model-banner {
     }
 
@@ -320,6 +319,7 @@
 }
 
 .model-single-complect {
+    padding-top: 20px;
     color: #000;
     &__item {   
         + .model-single-complect__item {
@@ -379,7 +379,8 @@
     &__item-ui {
         display: flex;
         justify-content: flex-end;
-        width: 90%;
+        width: 100%;
+        max-width: 990px;
     }
 
     &__item-info {

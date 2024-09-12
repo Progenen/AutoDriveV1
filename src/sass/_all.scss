@@ -447,6 +447,12 @@ section {
     width: 100%;
     margin-right: 20px;
     margin-bottom: 20px;
+    transition: .3s;
+    &:hover {
+        border: 1px solid var(---1-grey, #BFBFBF);
+        background: var(---1-grey, #BFBFBF);
+
+    }
     svg, img {
         width: 28px;
         height: 28px;

@@ -81,7 +81,7 @@ document.addEventListener('DOMContentLoaded', function () {
         footerColInfo.prepend(footerBtn);
     }
 
-    if (window.innerWidth <= 1200) {
+    if (window.innerWidth <= 992) {
         if (document.querySelector(".model-single-calc")) {
             const singleCalcBtn = document.querySelector(".model-single-calc__btn");
             const singleCalcRes = document.querySelector(".model-single-calc__results");
@@ -169,6 +169,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 el.style.backgroundImage = `url(${el.getAttribute("data-sm-bg")})`;
             })
         }
+
+        if (document.querySelector(".model-single-calc")) {
+            const singleCalcBtn = document.querySelector(".model-single-calc__btn");
+            const singleCalcForm = document.querySelector(".model-single-calc__form");
+    
+            singleCalcForm.append(singleCalcBtn);
+        }
     }
 
     let deadline;
@@ -244,13 +251,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    if (document.querySelector(".model-single-calc")) {
-        const singleCalcBtn = document.querySelector(".model-single-calc__btn");
-        const singleCalcForm = document.querySelector(".model-single-calc__form");
-
-        singleCalcForm.append(singleCalcBtn);
-    }
-
     if (document.querySelector(".spoiler")) {
         $(".spoiler").each(function (i, el) {
             $(el).on("click", () => {
@@ -304,12 +304,12 @@ document.addEventListener('DOMContentLoaded', function () {
                     const autoName = card.querySelector("[name=autoName]").value;
                     const creditDeadline = card.querySelector(".input-slider__res--deadline span").innerText;
                     const creditConribution = card.querySelector(".input-slider__res--percent span").innerText;
-                    const creditPay = card.querySelector(".card__back-res .credit__back-res-val").innerText;
+                    const creditPay = card.querySelector(".card__back-res .credit__back-res-val span").textContent ? card.querySelector(".card__back-res .credit__back-res-val span").textContent : "Не указано";
 
                     autoNameInp.value = autoName ? autoName : "Не указано";
                     creditDeadlineInp.value = creditDeadline ? creditDeadline : "Не указано";
                     creditContributionInp.value = creditConribution ? creditConribution : "Не указано";
-                    creditPayInp.value = creditPay ? creditPay : "Не указано";
+                    creditPayInp.value = creditPay;
 
                 }
             }
