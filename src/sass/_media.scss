@@ -651,11 +651,8 @@
 
     // model-single-complect 992
     .model-single-complect {
-        &__input {
-            width: 25%;
-            select {
-                border: 1px solid #BFBFBF;
-            }
+        &__spoiler-title {
+            width: 10%;
         }
         &__item-form-big-name {
             font-size: 14px;
@@ -706,8 +703,14 @@
         &__item-ui {
             flex-wrap: wrap;
             gap: 20px;
-            width: 100%;
-            max-width: 480px;
+            width: 80%;
+            order: 2;
+        }
+
+        &__spoiler-content {
+            order: 1;
+            margin-top: 20px;
+            padding: 20px 20px;
         }
 
         &__item-info {
@@ -1592,18 +1595,25 @@
             align-items: flex-start;
         }
 
-        &__input {
+        &__spoiler-title {
             width: 20%;
+        }
 
-            select {
-                border: none;
-                padding: 0;
-            }
-            
-            span {
-                bottom: -2px;
-                right: 0;
-            }
+        &__spoiler-content {
+            padding: 15px;
+        }
+
+        &__spoiler-content-item {
+            margin-bottom: 10px;
+        }
+
+        &__spoiler-content-name {
+            font-size: 12px;
+        }
+
+        &__spoiler-content-icon {
+            width: 16px;
+            height: 16px;
         }
 
         &__item-info {

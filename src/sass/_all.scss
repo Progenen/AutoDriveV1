@@ -107,11 +107,18 @@ footer {
     &__slider-item {
     }
 }
+
+.slider-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
 .slider {
     width: 100%;
     height: 500px;
     position: relative;
-    overflow: visible;
+    overflow: hidden;
     &__wrapper {
     }
 

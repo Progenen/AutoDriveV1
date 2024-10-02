@@ -1,6 +1,5 @@
 import Swiper from "swiper";
 import { Navigation, Pagination, FreeMode, Grid } from "swiper/modules";
-import { EffectFade } from 'swiper/modules';
 import { Fancybox } from "@fancyapps/ui";
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -17,20 +16,41 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     })
 
-    if (document.querySelector(".slider")) {
-        const slider = new Swiper('.slider', {
-            modules: [Pagination, Navigation, EffectFade],
-            effect: "fade",
+    if (document.querySelector(".offer__slider")) {
+        const sliderOfferContainer = document.querySelector(".offer__slider-container");
+
+        const sliderOffer = new Swiper('.offer__slider', {
+            modules: [Pagination, Navigation],
+            spaceBetween: 15,
             pagination: {
-                el: ".slider__pagination",
-                type: "bullets"
+                el: sliderOfferContainer.querySelector(".slider-container .slider__pagination"),
+                type: "bullets",
             },
             breakpoints: {
-
                 992: {
                     navigation: {
-                        nextEl: ".slider__arrow--next",
-                        prevEl: ".slider__arrow--prev"
+                        nextEl: sliderOfferContainer.querySelector(".slider-container .slider__arrow--next"),
+                        prevEl: sliderOfferContainer.querySelector(".slider-container .slider__arrow--prev")
+                    },
+                }
+            }
+        })
+    }
+
+    if (document.querySelector(".call__slider")) {
+        const sliderCallContainer = document.querySelector(".call__slider-container");
+
+        const slideCall = new Swiper('.call__slider', {
+            modules: [Pagination, Navigation],
+            pagination: {
+                el: sliderCallContainer.querySelector(".slider-container .slider__pagination"),
+                type: "bullets",
+            },
+            breakpoints: {
+                992: {
+                    navigation: {
+                        nextEl: sliderCallContainer.querySelector(".slider-container .slider__arrow--next"),
+                        prevEl: sliderCallContainer.querySelector(".slider-container .slider__arrow--prev")
                     },
                 }
             }
@@ -173,7 +193,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (document.querySelector(".model-single-calc")) {
             const singleCalcBtn = document.querySelector(".model-single-calc__btn");
             const singleCalcForm = document.querySelector(".model-single-calc__form");
-    
+
             singleCalcForm.append(singleCalcBtn);
         }
     }
@@ -260,6 +280,17 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    if (document.querySelector("[data-spoiler-parent]")) {
+        $("[data-spoiler-parent]").each(function (i, el) {
+            $(el).find("[data-spoiler-content]").hide();
+
+            $(el).find("[data-spoiler-title]").on("click", () => {
+                $(el).find("[data-spoiler-title]").toggleClass("active");
+                $(el).find("[data-spoiler-content]").slideToggle(200)
+            })
+        })
+    }
+
     Fancybox.bind("[data-fancybox]", {
         // Your custom options
     });
@@ -291,29 +322,29 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
-        Fancybox.bind('[data-fancybox-modal]', {
-            mainClass: "modal",
-            on: {
-                "reveal": (fancybox, slide) => {
-                    const modal = slide.contentEl;
-                    const card = slide.triggerEl.parentNode;
-                    const autoNameInp = modal.querySelector("[name=autoName]");
-                    const creditDeadlineInp = modal.querySelector("[name=creditDeadline]");
-                    const creditContributionInp = modal.querySelector("[name=creditContribution]");
-                    const creditPayInp = modal.querySelector("[name=creditPay");
-                    const autoName = card.querySelector("[name=autoName]").value;
-                    const creditDeadline = card.querySelector(".input-slider__res--deadline span").innerText;
-                    const creditConribution = card.querySelector(".input-slider__res--percent span").innerText;
-                    const creditPay = card.querySelector(".card__back-res .credit__back-res-val span").textContent ? card.querySelector(".card__back-res .credit__back-res-val span").textContent : "Не указано";
+    Fancybox.bind('[data-fancybox-modal]', {
+        mainClass: "modal",
+        on: {
+            "reveal": (fancybox, slide) => {
+                const modal = slide.contentEl;
+                const card = slide.triggerEl.parentNode;
+                const autoNameInp = modal.querySelector("[name=autoName]");
+                const creditDeadlineInp = modal.querySelector("[name=creditDeadline]");
+                const creditContributionInp = modal.querySelector("[name=creditContribution]");
+                const creditPayInp = modal.querySelector("[name=creditPay");
+                const autoName = card.querySelector("[name=autoName]").value;
+                const creditDeadline = card.querySelector(".input-slider__res--deadline span").innerText;
+                const creditConribution = card.querySelector(".input-slider__res--percent span").innerText;
+                const creditPay = card.querySelector(".card__back-res .credit__back-res-val span").textContent ? card.querySelector(".card__back-res .credit__back-res-val span").textContent : "Не указано";
 
-                    autoNameInp.value = autoName ? autoName : "Не указано";
-                    creditDeadlineInp.value = creditDeadline ? creditDeadline : "Не указано";
-                    creditContributionInp.value = creditConribution ? creditConribution : "Не указано";
-                    creditPayInp.value = creditPay;
+                autoNameInp.value = autoName ? autoName : "Не указано";
+                creditDeadlineInp.value = creditDeadline ? creditDeadline : "Не указано";
+                creditContributionInp.value = creditConribution ? creditConribution : "Не указано";
+                creditPayInp.value = creditPay;
 
-                }
             }
-        });
+        }
+    });
 
 });
 
