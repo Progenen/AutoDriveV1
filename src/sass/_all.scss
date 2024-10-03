@@ -792,12 +792,17 @@ section {
     display: flex;
     overflow: hidden;
     width: 100%;
+    transition: .3s;
+    &:hover {
+        border: 1px solid $colorRed;
+    }
     img {
         width: 100%;
         max-height: 229px;
         object-fit: cover;
         max-height: auto;
         border-radius: 20px;
+        margin-top: -2px;
         overflow: hidden;
     }
 
@@ -863,7 +868,16 @@ section {
         margin-top: 5px;
     }
 
+    &__link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
+
     &__btn {
+        position: relative;
+        z-index: 4;
         margin-top: 20px;
         width: 100%;
         max-width: 100%;
@@ -887,6 +901,7 @@ section {
         top: 0;
         transform: translateX(100%);
         transition: .3s;
+        z-index: 5;
         h3 {
             font-family: Inter;
             font-size: 20px;
